@@ -8,7 +8,7 @@ import csv
 
 to_zone = tz.gettz('IST')
 
-last_12_hrs = datetime.now() - timedelta(hours=18)
+last_12_hrs = datetime.now() - timedelta(hours=12)
 last_12_hrs = last_12_hrs.astimezone(to_zone)
 
 
