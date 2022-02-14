@@ -19,7 +19,7 @@ def get_last_commit(github_url):
     username = github_url[-2]
     repo_name = github_url[-1]
     url = f'https://api.github.com/repos/{username}/{repo_name}/branches'
-    headers = {'Authorization': f'token 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'}
+    headers = {'Authorization': f'token {"Your token"}'}
     response = requests.get(url=url, headers=headers)
     branches = [i["name"] for i in json.loads(response.text)]
     times = []
